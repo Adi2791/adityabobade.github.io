@@ -1,5 +1,5 @@
 /* Profile Image Styling */
-.profile-img {
+.profile-img {<img src="images/aditya.jpg">}
   width: 250px;
   height: 250px;
   object-fit: cover;
