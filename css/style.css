@@ -1,44 +1,138 @@
-/* Profile Image Styling */
-.profile-img {<img src="images/aditya.jpg">}
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #ffbd39;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
 }
 
-/* Skills Section Styling */
-.skill-item {
-  margin-bottom: 20px;
-}
-
-.skill-item span {
-  font-weight: 600;
-}
-
-.progress {
-  background-color: #e0e0e0;
-  height: 20px;
-  border-radius: 10px;
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 140px 0;
+  text-align: center;
+  position: relative;
   overflow: hidden;
 }
 
-.progress-bar {
-  background: linear-gradient(90deg, #ffbd39, #ff8800);
-  height: 100%;
-  line-height: 20px;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: right;
-  padding-right: 10px;
-  border-radius: 10px;
-  transition: width 1s ease-in-out;
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-/* Background Fix */
-#about-section {
-  background-color: #f8f9fa;
-  padding: 80px 0;
+.hero h3 {
+  font-weight: 400;
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+.hero p {
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+/* Animated Button */
+.hero .btn {
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Section Titles */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Skills Section */
+.skill-badge {
+  margin: 8px;
+  padding: 12px 18px;
+  background: linear-gradient(45deg, #e3f2fd, #ffffff);
+  border-radius: 30px;
+  display: inline-block;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  color: white;
+}
+
+/* Resume Section */
+.resume-section {
+  background: linear-gradient(135deg, #1c1c1c, #2c3e50);
+  color: white;
+  padding: 100px 0;
+}
+
+.download-btn {
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  border: none;
+  padding: 14px 35px;
+  font-weight: bold;
+  border-radius: 30px;
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f4f6f9;
+}
+
+#contact p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  padding: 30px 0;
+  font-size: 0.9rem;
 }
